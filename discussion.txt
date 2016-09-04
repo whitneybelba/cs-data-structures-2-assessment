@@ -1,0 +1,68 @@
+Recursion
+1. Recursion is when a function calls itself from within the function. While calling itself, 
+the function kind of digs itself down through layers until it reaches its base case, and then 
+climbs back out of each layer again. 
+
+2. A base case is required because the function needs to know when to stop digging down 
+and start climbing back out.
+
+
+Graphs
+1. A graph is like a tree - it is a set of nodes with connections between certain nodes.
+
+2. A graph is different from a tree because a graph can have loops/cycles, and
+relationships between nodes can be directed or non-directed. Trees can't have
+loops/cycles and relationships are directed. 
+
+3. A graph would be good for modeling a flight map that a booking website uses. Through
+the interconnecting nodes and prices between different nodes, booking websites can 
+use algorithms to find the cheapest option for a user.
+
+
+Performance of Different Data Structures
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure              Index       Search      Add-R       Add-L       Pop-L       Pop-R
+Python List (Array)          O(1)        O(n)        O(1)        O(n)        O(n)        O(1)
+
+Linked List                  O(n)        O(n)        O(1)        O(1)        O(1)        O(n)
+
+Doubly-Linked List           O(n)        O(n)        O(1)        O(1)        O(1)        O(1)                     
+Queue (as Array)              X            X         O(1)          X         O(n)         X
+
+Queue (as LL or DLL)          X            X         O(1)          X         O(1)         X
+
+Stack (as Ary, LL, or DLL)    X            X         O(1)          X           X         O(1)
+
+Deque (as DLL)                X            X         O(1)        O(1)        O(1)        O(1)
+
+
+Fill in Runtime and Memory:
+
+Data Structure             Get        Add        Delete         Iterate           Memory
+Dictionary (Hash Map)      O(1)       O(1)        O(1)            O(n)            medium
+
+Set (Hash Map)             O(1)       O(1)        O(1)            O(n)            medium
+
+Binary Search Tree       O(log n)     O(n)        O(n)            O(1)            a little
+
+Tree                       O(n)       O(1)        O(1)            O(1)            a little
+
+Sorting:
+1. Buble Sort works by iterating through a list, comparing two numbers at a time, and "bubbling" the largest number to the end of the list. This pattern repeats until the list is sorted. After the first pass, the largest number will be the last item in the list. After the second pass, the 2nd largest item will be the 2nd to last item in the list, and so on until the list is sorted.
+
+2. Merge Sort is a recursive way to sort in which you break your main list into smaller and smaller lists until you reach your base case in which all numbers are a list of one. You then rebuild your lists up into larger and larger sorted lists until you reach two sorted lists. From there you compare the first element of both sorted lists, remove the lower element, and add it to the results list. You keep comparing and moving the first elements of each list until a list is empty, then append the remaining sorted elements from the other list to the results list. 
+
+3. Quicksort works by picking a (usually) random pivot or partition number. All items smaller than that number go to the left of the pivot, and all things larger go to the right. Keep doing these steps recursively on each sub-list until the list is sorted. This happens in place, so there is no need to recombine lists. 
+
+Git Branching
+
+Give an instance when you would use git branching.
+What is a pull request?
+
+1. You can use git branching for testing an idea safely without losing your other work.  Let's say you want to add a feature to a project, but you don't want to affect the rest of the project. You can use a git branch where you will work on the new feature and only merge those changes to the rest of the project when you are sure you want to.
+
+2. A pull request is when you want to add your personal updates to a project that doesn't belong to you.  The project owner will accept or deny the request after looking at the updates and deciding if they want to add the updates to the project. 
+
+
